@@ -1,0 +1,54 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="278" Width="632" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Name="dloader" HorizontalAlignment="Center" VerticalAlignment="Center" SizeToContent="WidthAndHeight" Title="Speedy">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF35A3FF" Offset="1"/>
+            <GradientStop Offset="0.18" Color="White"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Height="249" VerticalAlignment="Bottom" Width="626">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="305*" />
+            <ColumnDefinition Width="305*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="49" TextWrapping="Wrap" VerticalAlignment="Top" Width="626" RenderTransformOrigin="0.737,2.758" FontFamily="Segoe Script" FontSize="24" Foreground="{x:Null}" FontWeight="Bold" TextAlignment="Center" Padding="137,6,0,6" Grid.ColumnSpan="2" >
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF35A3FF"/>
+                    <GradientStop Offset="1" Color="White"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Canvas HorizontalAlignment="Left" Height="185" Margin="0,54,0,0" VerticalAlignment="Top" Width="626" Grid.ColumnSpan="2">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.5">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="131,0,0,0" TextWrapping="Wrap" Text=" Speedy" VerticalAlignment="Top" Width="238" RenderTransformOrigin="0.737,2.758" FontFamily="Segoe Script" FontSize="24" Foreground="Black" FontWeight="Bold" TextAlignment="Center" Padding="137,6,0,6" Grid.ColumnSpan="2" >
+            <TextBlock.Background>
+                <ImageBrush ImageSource="internet.ico" Stretch="Uniform"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Label x:Name="pers" HorizontalAlignment="Left" Height="39" Margin="0,200,0,0" VerticalAlignment="Top" Width="626" HorizontalContentAlignment="Center" FontSize="16.667" Grid.ColumnSpan="2" VerticalContentAlignment="Center" Content="Ready when you are!" FontWeight="Bold" />
+        <ProgressBar x:Name="s" Height="15" Margin="18,191,18,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Background="#7CFFFFFF" SmallChange="0.001">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#81808080" Offset="0" />
+                    <GradientStop Color="Black" Offset="1" />
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <Label FontFamily="Palatino Linotype" FontSize="15" FontWeight="Normal" Height="33" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="10,206,0,0" x:Name="sp" VerticalAlignment="Top" Width="289" VerticalContentAlignment="Top" />
+        <TextBox x:Name="link" HorizontalAlignment="Left" Height="31" Margin="18,65,0,0" TextWrapping="NoWrap" Text="Enter the file link..." VerticalAlignment="Top" Width="590" FontSize="15.333" Grid.ColumnSpan="2" BorderBrush="CornflowerBlue" Background="#A0FFFFFF" Foreground="Gray" />
+        <TextBox x:Name="dir" HorizontalAlignment="Left" Height="27" Margin="18,102,0,0" TextWrapping="NoWrap" Text="Set download location..." VerticalAlignment="Top" Width="478" FontSize="15.333" Grid.ColumnSpan="2" BorderBrush="CornflowerBlue" Background="#A0FFFFFF" Foreground="Gray" />
+        <Button x:Name="br" Content="Browse..." HorizontalAlignment="Left" Height="27" Margin="189,102,0,0" VerticalAlignment="Top" Width="106" Cursor="Hand" FontSize="14" Grid.Column="1" Background="#FFA3D2FF" BorderBrush="CornflowerBlue" />
+        <Button Background="#FFA3D2FF" BorderBrush="CornflowerBlue" Content="Cancel" Cursor="Hand" FontFamily="Palatino Linotype" FontSize="14" HorizontalAlignment="Left" HorizontalContentAlignment="Center" IsEnabled="False" Margin="6,150,0,68" x:Name="cel" Width="141" Grid.Column="1" />
+        <Button Background="#FFA3D2FF" BorderBrush="CornflowerBlue" Content="Download" Cursor="Hand" HorizontalAlignment="Left" HorizontalContentAlignment="Center" IsEnabled="True" Margin="131,150,0,68" x:Name="dload" Width="141" FontSize="14" IsDefault="True" />
+    </Grid>
+</Window>
+
+    
